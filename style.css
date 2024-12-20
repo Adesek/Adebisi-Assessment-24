@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    color: rgb(5, 5, 53);
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+
+#body {
+    width: 100;
+}
+
+
+/*************Header**************/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 2px 5px 15px rgba(o, 0, 0, 0.6);
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 30px 40px;
+    position: relative;
+}
+
+#navbar li a,
+#navbar li a.active {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    transition: 1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: lightcoral;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: maroon;
+    position: absolute;
+    bottom: -1px;
+    left: 40px;
+}
+
+#hero {
+    background-image: url(images/background-1.jpg);
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding: 100px 180px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+/***************About*************/
+
+#about {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 12px;
+    padding: 10px 40px;
+    align-items: center;
+    transition: 0.2s ease;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    color: darkgreen;
+    line-height: 2.5;
+}
+
+#about p span {
+    color: darkred;
+    line-height: 1.5;
+}
+
+#about button:hover {
+    background-color: aquamarine;
+    color: green;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid white;
+    
+}
+
+#about .img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+/*******************Project***************/
+#project {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#project h2 {
+    color: green;
+}
+
+#project .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#project .pro {
+    width: 23%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+    margin: 15px 12px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+#project .pro img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#project .pro .des {
+    text-align: start;
+    flex-direction: column;
+}
+
+#project .pro .des span {
+    color: #606063;
+    font-size: 18px;
+}
+
+#project .pro .des h5 {
+    color: #1a1a1a;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+#project .pro .des p {
+    font-size: 12px;
+    color: rgba(0, 3, 2, 0.7);
+}
+
+#project .cart a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: none;
+    font-weight: 500;
+    color: green;
+    border: 1px solid green;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*********************** Contact **************************/
+#contact {
+    padding: 20px 80px;
+    height: 40vh;
+    margin-top: 40px;
+    background-color: coral;
+    height: 56vh;
+}
+
+#contact .con span {
+    color: firebrick;
+}
+
+#footer {
+    margin-top: 20px;
+    align-items: center;
+}
